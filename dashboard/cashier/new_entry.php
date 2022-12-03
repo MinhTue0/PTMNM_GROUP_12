@@ -118,32 +118,32 @@ page_protect();
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">New Member</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Thêm thành viên</h1>
                     </div>
 
                     <form action="new_submit.php" method="POST" class="form-horizontal form-groups-bordered" enctype="multipart/form-data" style="margin: 0 auto;">
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Membership ID :</label>
+                            <label for="field-1" class="col-sm-3 control-label">ID Thành viên:</label>
                             <div class="col-sm-5">
                                 <input type="text" name="p_id" value="<?php echo time(); ?>" class="form-control" readonly />
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label" style="max-width: 90px;">Photo :</label>
+                            <label for="field-1" class="col-sm-3 control-label" style="max-width: 90px;">Ảnh :</label>
                             <input type="file" name="image" id="fileToUpload" />
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Name :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Họ tên :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="p_name" id="textfield3" class="form-control" data-rule-required="true" data-rule-minlength="4" placeholder="Member Name" maxlength="30">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Address :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Địa chỉ :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="add" id="textfield5" class="form-control" data-rule-required="true" data-rule-minlength="6" placeholder="Address">
                             </div>
@@ -157,53 +157,53 @@ page_protect();
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Birthdate :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Ngày sinh :</label>
                             <div class="col-sm-5">
                                 <input type="date" name="birthdate" id="birthdate" class="form-control datepicker" data-format="yyyy-m-d">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Age :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Tuổi :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="age" id="textfield4" class="form-control" data-rule-required="true" data-rule-minlength="1" placeholder="Age" onKeyPress="return checkIt(event)" maxlength="3">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Sex :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Giới tính:</label>
                             <div class="col-sm-5">
                                 <select name="sex" id="bbb" data-rule-required="true" class="form-control">
                                     <option value="">-- Please select --</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
+                                    <option value="Male">Name</option>
+                                    <option value="Female">Nữ</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Height :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Chiều cao :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="height" id="textfield" class="form-control" data-rule-required="true" data-rule-minlength="1" placeholder="Height" maxlength="10"> (In FEET)
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Weight :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Cân nặng :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="weight" id="textfield" class="form-control" data-rule-required="true" data-rule-minlength="1" placeholder="Weight" maxlength="10"> (In Kgs)
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Nationality :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Quốc tịch :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="nationality" id="nationality" class="form-control" data-rule-required="true" data-rule-minlength="6" placeholder="Nationality">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Contact :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Liên hệ :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="contact" id="textfield6" class="form-control" data-rule-required="true" data-rule-minlength="12" placeholder="Mobile / Phone" onKeyPress="return checkIt(event)" maxlength="12">
                             </div>
@@ -217,72 +217,72 @@ page_protect();
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Facebook Account:</label>
+                            <label for="field-1" class="col-sm-3 control-label">Tài khoản Facebook:</label>
                             <div class="col-sm-5">
                                 <input type="text" name="facebookaccount" id="facebookaccount" class="form-control" data-rule-minlength="5" placeholder="Facebook Account" maxlength="60">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Twitter Account:</label>
+                            <label for="field-1" class="col-sm-3 control-label">Tài khoản Twitter:</label>
                             <div class="col-sm-5">
                                 <input type="text" name="twitteraccount" id="twitteraccount" class="form-control" data-rule-minlength="5" placeholder="Twitter Account" maxlength="60">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Contact Person:</label>
+                            <label for="field-1" class="col-sm-3 control-label">Liên hệ của người thân:</label>
                             <div class="col-sm-5">
                                 <input type="text" name="contactperson" id="contactperson" class="form-control" data-rule-minlength="5" placeholder="Contact Person" maxlength="60">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Previous Gym:</label>
+                            <label for="field-1" class="col-sm-3 control-label">Previous phòng gym:</label>
                             <div class="col-sm-5">
                                 <input type="text" name="previousgym" id="previousgym" class="form-control" data-rule-minlength="5" placeholder="Previous Gym" maxlength="60">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Years Training:</label>
+                            <label for="field-1" class="col-sm-3 control-label">Số năm tập luyện:</label>
                             <div class="col-sm-5">
                                 <input type="text" name="yearstraining" id="yearstraining" class="form-control" data-rule-minlength="5" placeholder="Years Training" maxlength="60">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Proof Given :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Giấy tờ tùy thân :</label>
                             <div class="col-sm-5">
                                 <select name="proof" id="bbb" data-rule-required="true" class="form-control">
                                     <option value="">-- Please select --</option>
                                     <option value="GSIS Card">GSIS Card</option>
                                     <option value="Voter Card">Voter Card</option>
-                                    <option value="Driving License">Driving License</option>
+                                    <option value="Driving License">Bằng lái xe</option>
                                     <option value="Passport">Passport</option>
                                     <option value="College/School ID">College/School ID</option>
-                                    <option value="Others">Others</option>
+                                    <option value="Others">Khác</option>
                                 </select>
 
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Other Proof</label>
+                            <label for="field-1" class="col-sm-3 control-label">Giấy tờ khác</label>
                             <div class="col-sm-5">
                                 <input type="text" name="other_proof" id="other_proof" class="form-control" placeholder="Other Proof" maxlength="60">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Join Date :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Ngày đăng ký :</label>
                             <div class="col-sm-5">
                                 <input type="text" name="date" id="textfield22" value="<?php echo date('Y-m-d'); ?>">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="field-1" class="col-sm-3 control-label">Membership Type :</label>
+                            <label for="field-1" class="col-sm-3 control-label">Loại thành viên :</label>
                             <div class="col-sm-5">
                                 <select name="mem_type" id="id" data-rule-required="true" class="country">
                                     <option value="">-- Please select --</option>
@@ -340,23 +340,23 @@ page_protect();
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Bạn có muốn đăng xuất</h5>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">Vui lòng chọn "Đăng xuất" để thoát khỏi phiên làm việc!</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Thoát</button>
+					<a class="btn btn-primary" href="logout.php">Đăng xuất</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="/template/vendor/jquery/jquery.min.js"></script>

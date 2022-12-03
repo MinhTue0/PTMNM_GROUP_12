@@ -8,7 +8,7 @@ page_protect();
 <head>
 
 
-	<title>Sam's Slim Gym | Dashboard </title>
+	<title>Admin</title>
 
 	<!-- Custom fonts for this template-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -77,14 +77,6 @@ page_protect();
 							</div>
 						</li>
 
-						<!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="../../baitap/baitap.php">
-                                <b>Bài Tập</b>
-                            </a>
-                            
-                        </li>
-
 						<!-- Nav Item - User Information -->
 						<li class="nav-item dropdown no-arrow">
 							<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -96,7 +88,7 @@ page_protect();
 
 								<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
 									<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-									Logout
+									Đăng xuất
 								</a>
 							</div>
 						</li>
@@ -111,7 +103,7 @@ page_protect();
 
 					<!-- Page Heading -->
 					<div class="d-sm-flex align-items-center justify-content-between mb-4">
-						<h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+						<h1 class="h3 mb-0 text-gray-800">Trang Chủ</h1>
 					</div>
 
 					<!-- Content Row -->
@@ -124,7 +116,7 @@ page_protect();
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-												Paid Income This Month</div>
+												Tổng Doanh Thu</div>
 											<div class="h5 mb-0 font-weight-bold text-gray-800">
 												<?php
 												$date  = date('Y-m');
@@ -157,7 +149,7 @@ page_protect();
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-												Total Members</div>
+												Số lượng thành viên</div>
 											<div class="h5 mb-0 font-weight-bold text-gray-800">
 												<?php
 												$date  = date('Y-m');
@@ -189,7 +181,7 @@ page_protect();
 								<div class="card-body">
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
-											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">Joined This Month
+											<div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tham gia vào tháng này
 											</div>
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
@@ -233,7 +225,7 @@ page_protect();
 									<div class="row no-gutters align-items-center">
 										<div class="col mr-2">
 											<div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-												Income This Month</div>
+												Doanh Thu Tháng này</div>
 											<div class="h5 mb-0 font-weight-bold text-gray-800">
 												<?php
 												$date  = date('Y-m');
@@ -285,15 +277,15 @@ page_protect();
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Bạn có muốn đăng xuất</h5>
 					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">×</span>
 					</button>
 				</div>
-				<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+				<div class="modal-body">Vui lòng chọn "Đăng xuất" để thoát khỏi phiên làm việc!</div>
 				<div class="modal-footer">
-					<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-					<a class="btn btn-primary" href="logout.php">Logout</a>
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Thoát</button>
+					<a class="btn btn-primary" href="logout.php">Đăng xuất</a>
 				</div>
 			</div>
 		</div>

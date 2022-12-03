@@ -171,7 +171,7 @@ page_protect();
 												echo "<td>" . $row['expiry'] . "</td>";
 												$sno++;
 
-												echo "<td><form action='bal_pay.php' method='post'><input type='hidden' name='name' value='" . $row['invoice'] . "'/><input type='submit' value='Pay Balance ' class='btn btn-info'/></form></td></tr>";
+												echo "<td><form action='bal_pay.php' method='post'><input type='hidden' name='name' value='" . $row['invoice'] . "'/><input type='submit' value='Thanh Toán Số Dư' class='btn btn-info'/></form></td></tr>";
 												$msgid  = 0;
 												$income = $row['bal'] + $income;
 											}
@@ -181,7 +181,7 @@ page_protect();
 									</tbody>
 								</table>
 
-								<h3>Total Unpaid Amount :<?php echo $income; ?></h3>
+								<h3>Tổng Số Tiền Chưa thanh toán :<?php echo $income; ?></h3>
 							</div>
 						</div>
 					</div>
@@ -209,19 +209,20 @@ page_protect();
 	</a>
 
 	<!-- Logout Modal-->
+	<!-- Logout Modal-->
 	<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Bạn có muốn đăng xuất</h5>
 					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">×</span>
 					</button>
 				</div>
-				<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+				<div class="modal-body">Vui lòng chọn "Đăng xuất" để thoát khỏi phiên làm việc!</div>
 				<div class="modal-footer">
-					<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-					<a class="btn btn-primary" href="logout.php">Logout</a>
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Thoát</button>
+					<a class="btn btn-primary" href="logout.php">Đăng xuất</a>
 				</div>
 			</div>
 		</div>

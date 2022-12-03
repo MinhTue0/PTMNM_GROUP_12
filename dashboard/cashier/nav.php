@@ -41,7 +41,7 @@
 	<li class="nav-item active">
 		<a class="nav-link" href="index.php">
 			<i class="fas fa-fw fa-tachometer-alt"></i>
-			<span>Dashboard</span></a>
+			<span>Trang Chủ</span></a>
 	</li>
 
 	<!-- Divider -->
@@ -50,31 +50,37 @@
 	<li class="nav-item">
 		<a class="nav-link" href="new_entry.php">
 			<i class="fas fa-fw fa-chart-area"></i>
-			<span>New Register</span></a>
+			<span>Thêm thành viên</span></a>
 	</li>
 	<li class="nav-item">
 		<a class="nav-link" href="payments.php">
 			<i class="fas fa-fw fa-chart-area"></i>
-			<span>Payment</span></a>
+			<span>Thanh Toán</span></a>
 	</li>
 
 	<li class="nav-item">
 		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities_al" aria-expanded="true" aria-controls="collapseUtilities">
 			<i class="fas fa-fw fa-wrench"></i>
-			<span>Alerts</span>
+			<span>Thông Báo</span>
 		</a>
 		<div id="collapseUtilities_al" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<a class="collapse-item" href="unpaid.php">Unpaid Members</a>
-				<a class="collapse-item" href="sub_end.php">Ending Membership</a>
+				<a class="collapse-item" href="unpaid.php">Chưa thanh toán</a></a>
+				<a class="collapse-item" href="sub_end.php">Gia hạn</a>
 			</div>
 		</div>
 	</li>
 
 	<li class="nav-item">
+		<a class="nav-link" href="../../baitap/baitap.php">
+			<i class="fas fa-fw fa-tachometer-alt"></i>
+			<span>Bài tập</span></a>
+	</li>
+
+	<li class="nav-item">
 		<a class="nav-link" href="logout.php">
 			<i class="fas fa-fw fa-chart-area"></i>
-			<span>Logout</span></a>
+			<span>Đăng xuất</span></a>
 	</li>
 
 	<!-- Divider -->
