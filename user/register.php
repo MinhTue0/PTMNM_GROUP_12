@@ -473,7 +473,7 @@ ob_start();
 
                 $.ajax({
                     type: "POST",
-                    url: "login-Controller.php",
+                    url: "register-Controller.php",
                     data: {
                         name: name,
                         loginID: loginID,
